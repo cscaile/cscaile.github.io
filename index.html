@@ -50,9 +50,9 @@
         When you use the "auto" rule on both left and right margins, 
         your browser will do the math necessary to center a block element.
         */
-      display: inline-block;
-      margin-left: center;
-      margin-right: center;
+      /*display: inline-block;*/
+      /*margin-left: 0;
+      margin-right: 0;*/
       box-shadow: 10px 10px grey;
       /* Block display (more on this later) */
     }
@@ -77,6 +77,11 @@
       /* More info here: http://www.w3schools.com/cssref/pr_list-style-position.asp */
       list-style-position: inside;
     }
+
+    .profile_pic {
+      margin-left: 40%;
+      margin-right: 40%;
+    }
   </style>
 </head>
 
@@ -84,8 +89,10 @@
  <!-- Headline -->
  <h1>Welcome to my home page</h1>
   <p>Currently working on the DU Data Analytics Boot Camp</p>
-  <img src="assets/curtis.jpg" width="150" height="200" alt="Photo of me">
-  <img src="assets/photo2.jpg" width="200" height="150" alt="Photo of us">
+  <div class='profile_pic'>
+    <img src="assets/curtis.jpg" width="150" height="200" alt="Photo of me">
+    <img src="assets/photo2.jpg" width="200" height="150" alt="Photo of us">
+  </div>
  <br>
  <ul>
   <li>Email:
